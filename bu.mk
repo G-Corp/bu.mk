@@ -154,6 +154,14 @@ clean-erl:
 distclean-erl: clean-erl
 	$(verbose) $(RM_F) rebar.lock
 
+# Elixir
+
+local.hex:
+	$(MIX) local.hex --force
+
+local.rebar:
+	$(MIX) local.rebar --force
+
 # Update
 
 BU_MK_REPO ?= https://github.com/botsunit/bu.mk
