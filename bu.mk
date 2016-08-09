@@ -91,7 +91,6 @@ MIX = mix
 ifeq ($(HAS_ELIXIR), 1)
 
 compile-ex: elixir clean
-	$(verbose) $(MIX) local.rebar --force
 	$(verbose) $(MIX) deps.get
 	$(verbose) $(MIX) deps.compile
 	$(verbose) $(MIX) compile
