@@ -134,7 +134,7 @@ compile-erl:
 tests:
 	$(verbose) $(REBAR) eunit
 
-doc:
+doc::
 	$(verbose) $(REBAR) as doc edoc
 
 dist: $(DIST)
