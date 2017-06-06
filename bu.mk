@@ -182,9 +182,9 @@ endif
 
 dist: $(DIST) ## Create a distribution
 
-clean: $(CLEAN) ## Clean
+clean:: $(CLEAN) ## Clean
 
-distclean: $(DISTCLEAN) ## Clean the distribution
+distclean:: $(DISTCLEAN) ## Clean the distribution
 
 dev: compile-erl
 ifdef ERL_CONFIG
